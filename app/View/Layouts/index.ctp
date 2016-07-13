@@ -10,10 +10,10 @@
 		<?php if(isset($meta['description'])): ?>
 			<meta name="description" content="<?=$meta['description']?>">
 		<?php endif; ?>
-		<link href="css/normalize.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>		
+		<link href="/css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>		
 	</head>
 	<body>
 		<?php echo $this->element('header'); ?>
@@ -36,7 +36,7 @@
 		<div class="cr">
 			<ul class="rows">
 				<li class="row_des">
-					<img src="img/r1.jpg">
+					<img src="/img/r1.jpg">
 					<span>Lorem Ipsum issimply dummy text</span>
 					<p>Contrary to popular belief, 
 					Lorem Ipsum is not simply 
@@ -45,7 +45,7 @@
 					literature from 45 BC, </p>
 				</li>
 				<li class="row_des">
-					<img src="img/r1.jpg">
+					<img src="/img/r1.jpg">
 					<span>Lorem Ipsum issimply dummy text</span>
 					<p>Contrary to popular belief, 
 					Lorem Ipsum is not simply 
@@ -54,7 +54,7 @@
 					literature from 45 BC, </p>
 				</li>
 				<li class="row_des">
-					<img src="img/r1.jpg">
+					<img src="/img/r1.jpg">
 					<span>Lorem Ipsum issimply dummy text</span>
 					<p>Contrary to popular belief, 
 					Lorem Ipsum is not simply 
@@ -63,7 +63,7 @@
 					literature from 45 BC, </p>
 				</li>
 				<li class="row_des">
-					<img src="img/r1.jpg">
+					<img src="/img/r1.jpg">
 					<span>Lorem Ipsum issimply dummy text</span>
 					<p>Contrary to popular belief, 
 					Lorem Ipsum is not simply 
@@ -132,8 +132,8 @@
 		<?php echo $this->element('footer'); ?>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="/js/slick.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
 		
 		<script type="text/javascript">
 		    $(document).ready(function(){

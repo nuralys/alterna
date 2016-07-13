@@ -46,6 +46,7 @@
 	Router::connect('/search/*', array('controller' => 'search', 'action' => 'index'));
 	Router::connect('/page/*', array('controller' => 'pages', 'action' => 'page'));
 	Router::connect('/investor/view/*', array('controller' => 'investors', 'action' => 'view'));
+	Router::connect('/service/view/*', array('controller' => 'services', 'action' => 'view'));
 	Router::connect('/article/view/*', array('controller' => 'articles', 'action' => 'view'));
 
 /**
