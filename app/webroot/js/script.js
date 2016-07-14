@@ -28,22 +28,27 @@
 })(jQuery);
 $(document).ready(function(){
      $(".tab").lightTabs();
-    $('.search').click(function(e) {
-    var $message = $('.s_part');
-    if ($message.css('opacity') != '1') {
-        $message.css('opacity','1').css('width','245px');
- 
-        var firstClick = true;
+    $('.search').on('click', function (e) {
+        if($('.s_part').hasClass('s_active')){
+            $('.s_part').removeClass('s_active');
+        }
+        else{
+            $('.s_part').addClass('s_active');                  
+        } 
+         var $message = $('.s_part');
+    if ($message.css('width') != '245px') {
+            $message.css('width','245px');
+            var firstClick = true;
         $(document).bind('click.myEvent', function(e) {
             if (!firstClick && $(e.target).closest('.s_part').length == 0) {
-                $message.css('opacity','0').css('width','0px');
+                $message.css('width','0px');
                 $(document).unbind('click.myEvent');
             }
             firstClick = false;
         });
     }
-    e.preventDefault();
-    });
+    e.preventDefault();                          
+    }); 
     var menu = document.querySelector(".m_menu");
     var mob_part = document.querySelector(".menu");
     var close = document.querySelector(".mob_close");

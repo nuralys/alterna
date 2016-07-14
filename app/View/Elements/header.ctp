@@ -55,14 +55,16 @@
 				<option>Ru</option>
 				<option>En</option>
 			</select>
-			<button class="search">
-				<div class="s_part">
+			<div class="search_area">
+			<button type='button' class="search">				
+			</button>
+			<div class="s_part">					
 					<form action="search" method="get">
 						<input type="search" class="s_input" name="q" placeholder="<?=__('Поиск')?>...">
 						<input class="s_submit" type="submit" value="Найти"/>
-					</form>
-				</div>
-			</button>					
+					</form>				
+			</div>
+			</div>					
 			<div class="clearfix"></div>
 		</div>
 	</div>
