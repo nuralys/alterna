@@ -16,11 +16,14 @@
 		<link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
 	</head>
 	<body>
+		<div class="page_wrapper">
 		<?php echo $this->element('header'); ?>
 		<div class="cr">
 			<?php echo $this->Session->flash('good'); ?>
 			<?php echo $this->Session->flash('bad'); ?>
 			<?php echo $this->fetch('content'); ?>
+		</div>
+		<div class="page_buffer"></div>
 		</div>	
 		<?php echo $this->element('footer'); ?>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
